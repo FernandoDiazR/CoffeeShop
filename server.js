@@ -59,5 +59,5 @@ app.use('/api/store', require('./api/store/store.routes'));
 var port = process.env.PORT || 3000; 
 
 app.listen(port,function(){
-	console.log("Running localhost port: "+port);
+	console.log("Running server in localhost:"+port);
 })

@@ -15,44 +15,24 @@ var scheduleSchema = new Schema({
 });
 
 var productsSchema = new Schema({
-    nameProduct: {
-        type: String,
-        required: true
-    },
-    priceProduct: {
-        type: Number,
-        required: true
-    },
-    descriptionProduct: {
-        type: String,
-        requiered: true
-    }
+    nameProduct: { type: String, required: true },
+    priceProduct: { type: Number, required: true },
+    descriptionProduct: { type: String, requiered: true }
 });
 
 var BranchSchema = new Schema({
-    nameBranch: {
-        type: String,
-        required: true
-    },
-    address: {
-        type: String
-    },
-    telephone: {
-        type: String
-    },
+    nameBranch: { type: String, required: true },
+    address: { type: String },
+    telephone: { type: String },
     schedule:[scheduleSchema],
     products: [productsSchema]
-})
+});
+
 var StoreSchema = new Schema({
-    nameStore: {
-        type: String,
-        required: true
-    },
-    descriptionStore: {
-        type: String
-    },
+    nameStore: { type: String, required: true },
+    descriptionStore: { type: String },
     branches: [BranchSchema]
-})
+});
 
 var Store = mongoose.model('Store',StoreSchema);
 

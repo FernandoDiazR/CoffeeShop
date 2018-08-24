@@ -1,12 +1,12 @@
 {
-  "name": "coffeshop",
+  "name": "coffeeshop",
   "version": "1.0.0",
-  "description": "Proyecto de coffe shop",
+  "description": "Proyecto en clase de coffee shop",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Esteban Segura Benavides",
+  "author": "Fernando Díaz Ramos",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.0",
